@@ -57,12 +57,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
-    "@storybook/addon-actions": "^5.0.10",
-    "@storybook/addon-info": "^5.0.10",
-    "@storybook/addon-links": "^5.0.10",
-    "@storybook/addons": "^5.0.10",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/addons": "^6.3.8",
     "@storybook/builder-webpack5": "^6.4.0-alpha.34",
-    "@storybook/react": "^5.0.10",
+    "@storybook/react": "^6.3.8",
     "babel-loader": "^8.2.2",
     "css-loader": "^2.1.1",
     "dotenv-webpack": "^7.0.3",
@@ -87,6 +87,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "core-js": "^3.0.1"
+    "core-js": "^3.0.1",
+    "sass-resources-loader": "^2.2.4"
   }
 }
