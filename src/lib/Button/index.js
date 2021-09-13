@@ -68,6 +68,9 @@ Button.propTypes = {
 
 // Specifies the default values for props:
 Button.defaultProps = {
+  /**
+   Text to be displayed on the button
+   */
   text: `None Provided`,
   type: `primary`,
   elementType: `button`,
