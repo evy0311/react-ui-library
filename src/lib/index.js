@@ -9,6 +9,7 @@ import Select from './Select'
 import SiteContainer from './SiteContainer'
 import TextArea from './TextArea'
 import TextInput from './TextInput'
+import ToggleSwitch from './ToggleSwitch'
 
 export { 
   Button,
@@ -21,5 +22,6 @@ export {
   Select,
   SiteContainer,
   TextArea,
-  TextInput
+  TextInput,
+  ToggleSwitch
 }

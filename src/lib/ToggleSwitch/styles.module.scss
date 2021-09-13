@@ -1,0 +1,115 @@
+@import './../../styles/_helpers.scss';
+
+$heightWidth: 14px;
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+
+  > * {
+    box-sizing: border-box;
+  }
+
+  > label {
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    padding-left: 20px;
+    display: block;
+  } 
+  
+  > input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    box-sizing: border-box;
+    padding: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    position: absolute;
+
+    &:checked ~ .check {
+      display: block;
+    } 
+  }
+  
+  > .checkbox {
+    background-color: white;
+    border-radius: 2px;
+    height: $heightWidth;
+    width: $heightWidth;
+    cursor: pointer;
+    border: 1px solid $colorFormInputBorder;
+    position: absolute;
+    top: 4px;
+    pointer-events: none;
+  }
+
+  > .check {
+    height: 13px;
+    width: 13px;
+    top: 4px;
+    left: 1px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    pointer-events: none;
+
+    > path {
+      fill: #555555;
+    }
+  }
+}
+
+// Slider stuff
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
